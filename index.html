@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>On the Role of Trainable Parameters in Differentiable Feedback Delay Networks</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+            th, td {
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+            }
+            td.proposed {
+               font-weight: bold;
+               font-family: Arial bold, sans-serif;
+            }
+         </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <table style="border:0;">
+                <tr>
+                    <td>
+                        <h1>On the Role of Trainable Parameters in Differentiable Feedback Delay Networks</h1>
+                        <h2>Additional Results</h2>
+                    </td>
+                </tr>
+            </table>
+
+        </header>
+
+
+
+        <div class="visible" id="area2">
+
+
+         <p>
+            The following results are provided as supplementary material for the article <b>On the Role of Trainable Parameters in Differentiable Feedback Delay Networks</b>, authored by R. Giampiccolo, A. I. Mezza, S. Koyama, M. Pezzoli, A. Bernardini, F. Antonacci, and A. Sarti, and presented at the <em>2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</em>, Barcelona, Spain, 4-8 Sept. 2026. 
+			</p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+<style>
+  .center-figure {
+    text-align: center;
+  }
+
+  .center-figure img {
+    display: inline-block;
+  }
+</style>
+
+<br><br>
+<p>
+  We performed the following tests to unveil the dependence of the FDN optimization on its parameters:
+</p>
+
+<ul>
+  <li>
+    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}\)</span>: in this test, we learn 
+    <span>\(\mathbf{W}\)</span>, <span>\(\bm{\Gamma}\)</span>, <span>\(\mathbf{b}\)</span>, and 
+    <span>\(\mathbf{C}\)</span> but we fix the vector of direct path gains 
+    <span>\(\mathbf{d}\)</span> (as in <span>[1]</span>) and the delay line 
+    lengths <span>\(\bm{m}\)</span> (540 trainable parameters);
+  </li>
+
+  <li>
+    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{b}\)</span>: in this test, we learn 
+    <span>\(\mathbf{W}\)</span>, <span>\(\bm{\Gamma}\)</span>, and <span>\(\mathbf{C}\)</span> but we fix the 
+    vector of direct path gains <span>\(\mathbf{d}\)</span> (as in 
+    <span>[1]</span>), the delay line lengths 
+    <span>\(\bm{m}\)</span>, and the input gains <span>\(\mathbf{b}\)</span> (516 trainable parameters);
+  </li>
+
+  <li>
+    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{C}\)</span>: in this test, we learn 
+    <span>\(\mathbf{W}\)</span>, <span>\(\bm{\Gamma}\)</span>, and <span>\(\mathbf{b}\)</span> but we fix the 
+    vector of direct path gains <span>\(\mathbf{d}\)</span> (as in 
+    <span>[1]</span>), the delay line lengths 
+    <span>\(\bm{m}\)</span>, and the matrix of the output gains 
+    <span>\(\mathbf{C}\)</span> (348 trainable parameters);
+  </li>
+
+  <li>
+    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{b}, \mathbf{C}\)</span>: in this test, we learn 
+    <span>\(\mathbf{W}\)</span> and <span>\(\bm{\Gamma}\)</span> but we fix the vector of direct path gains 
+    <span>\(\mathbf{d}\)</span> (as in <span>[1]</span>), the delay line lengths 
+    <span>\(\bm{m}\)</span>, the input gains <span>\(\mathbf{b}\)</span>, and the matrix of the output 
+    gains <span>\(\mathbf{C}\)</span> (324 trainable parameters);
+  </li>
+
+  <li>
+    <strong>All</strong>: in this test, we freeze all parameters to emulate the design paradigm of FDNs
+    as it existed before the introduction of differentiable signal processing (no trainable parameters).
+  </li>
+</ul>
+
+<br><br>
+
+<p><b>Test 1</b>: shoebox room of 5.46 × 14.52 × 3.38 m, source placed in the origin, receiver placed at (−0.37, −0.92, 0) m.</p>
+
+<figure class="center-figure">
+   <img src="images/metrics_1N.png" alt="Test 1" style="width:70%">
+   <figcaption style="text-align: center">Test 1</figcaption>
+</figure>
+
+<div>
+   <br>
+</div>
+  
+
+        <footer class="footer">
+            <p>
+            [1] R. Giampiccolo, A. I. Mezza, M. Pezzoli, S. Koyama, A. Bernardini, and F. Antonacci, “Modeling the Impulse Response of Higher-Order Microphone Arrays using Differentiable Feedback Delay Networks,” in Proceedings of the 28th International Conference on Digital Audio Effects (DAFx25), Ancona, Italy, Sept. 2025, pp. 180–187.
+            </p>
+        </footer>
+    </div>
+<div>
+   <br>
+</div>      
+
+</body>
+
+</html>
