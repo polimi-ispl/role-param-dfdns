@@ -67,7 +67,7 @@
 
 <ul>
   <li>
-    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}\)</span>: in this test, we learn 
+    <strong>Freeze</strong> <span>\(\mathbf{d}, \bm{m}\)</span>: in this test, we learn 
     <span>\(\mathbf{W}\)</span>, <span>\(\bm{\Gamma}\)</span>, <span>\(\mathbf{b}\)</span>, and 
     <span>\(\mathbf{C}\)</span> but we fix the vector of direct path gains 
     <span>\(\mathbf{d}\)</span> (as in <span>[1]</span>) and the delay line 
@@ -75,7 +75,7 @@
   </li>
 
   <li>
-    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{b}\)</span>: in this test, we learn 
+    <strong>Freeze</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{b}\)</span>: in this test, we learn 
     <span>\(\mathbf{W}\)</span>, <span>\(\bm{\Gamma}\)</span>, and <span>\(\mathbf{C}\)</span> but we fix the 
     vector of direct path gains <span>\(\mathbf{d}\)</span> (as in 
     <span>[1]</span>), the delay line lengths 
@@ -83,7 +83,7 @@
   </li>
 
   <li>
-    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{C}\)</span>: in this test, we learn 
+    <strong>Freeze</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{C}\)</span>: in this test, we learn 
     <span>\(\mathbf{W}\)</span>, <span>\(\bm{\Gamma}\)</span>, and <span>\(\mathbf{b}\)</span> but we fix the 
     vector of direct path gains <span>\(\mathbf{d}\)</span> (as in 
     <span>[1]</span>), the delay line lengths 
@@ -92,7 +92,7 @@
   </li>
 
   <li>
-    <strong>Frozen</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{b}, \mathbf{C}\)</span>: in this test, we learn 
+    <strong>Freeze</strong> <span>\(\mathbf{d}, \bm{m}, \mathbf{b}, \mathbf{C}\)</span>: in this test, we learn 
     <span>\(\mathbf{W}\)</span> and <span>\(\bm{\Gamma}\)</span> but we fix the vector of direct path gains 
     <span>\(\mathbf{d}\)</span> (as in <span>[1]</span>), the delay line lengths 
     <span>\(\bm{m}\)</span>, the input gains <span>\(\mathbf{b}\)</span>, and the matrix of the output 
@@ -100,7 +100,7 @@
   </li>
 
   <li>
-    <strong>All</strong>: in this test, we freeze all parameters to emulate the design paradigm of FDNs
+    <strong>Freeze All</strong>: in this test, we freeze all parameters to emulate the design paradigm of FDNs
     as it existed before the introduction of differentiable signal processing (no trainable parameters).
   </li>
 </ul>
