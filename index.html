@@ -58,7 +58,21 @@
   .center-figure img {
     display: inline-block;
   }
+
+  .column {
+  float: left;
+  width: 40%;
+  padding-left: 10px;
+  margin-left: 60px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
+
 
 <br><br>
 <p>
@@ -106,19 +120,101 @@
 
 <br><br>
 
-<p><b>Test 1</b>: shoebox room of 5.46 × 14.52 × 3.38 m, source placed in the origin, receiver placed at (−0.37, −0.92, 0) m.</p>
+<p><b>Test 1</b>: shoebox room of 5.46 × 14.52 × 3.38 m (W x L x H), source placed in the origin, receiver placed at (−0.37, −0.92, 0) m.</p>
 
 <figure class="center-figure">
-   <img src="images/metrics_1N.png" alt="Test 1" style="width:70%">
-   <figcaption style="text-align: center">Test 1</figcaption>
+   <img src="images/metrics_1N.png" alt="Test 1" style="width:60%">
+   <figcaption style="text-align: center">Test 1 - Errors on EDC, EDP, and EDR</figcaption>
 </figure>
 
-<br><br>
+<figure class="center-figure">
+   <img src="images/ps.png" alt="Test 1" style="width:80%">
+   <figcaption style="text-align: center">Test 1 - Pseudo-spectra.</figcaption>
+</figure>
 
-<p><b>Other tests will be published soon.</b></p>
+<div class="row">
+  <div class="column">
+    <img src="images/table.png" alt="Test 1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/table_sp.png" alt="Test 1" style="width:100%">
+  </div>
+</div>
+
+<br><br><br>
+
+<p><b>Test 2</b>: shoebox room of 5.46 × 14.52 × 3.38 m (W x L x H), source placed in the origin, receiver placed at (-0.51, −2.98, 0) m.</p>
+
+<figure class="center-figure">
+   <img src="images/R5-HOM2_metrics.png" alt="Test 2" style="width:60%">
+   <figcaption style="text-align: center">Test 2 - Errors on EDC, EDP, and EDR</figcaption>
+</figure>
+
+<figure class="center-figure">
+   <img src="images/R5-HOM2_ps.png" alt="Test 2" style="width:80%">
+   <figcaption style="text-align: center">Test 2 - Pseudo-spectra.</figcaption>
+</figure>
+
+<div class="row">
+  <div class="column">
+    <img src="images/R5-HOM2_table.png" alt="Test 2" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/R5-HOM2_table_sp.png" alt="Test 2" style="width:100%">
+  </div>
+</div>
+
+<br><br><br>
+
+<p><b>Test 3</b>: shoebox room of 5.46 × 14.52 × 3.38 m (W x L x H), source placed in the origin, receiver placed at (1.12, −4.56, 0) m.</p>
+
+<figure class="center-figure">
+   <img src="images/R4-HOM4_metrics.png" alt="Test 3" style="width:60%">
+   <figcaption style="text-align: center">Test 3 - Errors on EDC, EDP, and EDR</figcaption>
+</figure>
+
+<figure class="center-figure">
+   <img src="images/R4-HOM4_ps.png" alt="Test 3" style="width:80%">
+   <figcaption style="text-align: center">Test 3 - Pseudo-spectra.</figcaption>
+</figure>
+
+<div class="row">
+  <div class="column">
+    <img src="images/R4-HOM4_table.png" alt="Test 3" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/R4-HOM4_table_sp.png" alt="Test 3" style="width:100%">
+  </div>
+</div>
+
+
+<br><br><br>
+
+<p><b>Test 4</b>: shoebox room of 10 × 12 × 2.7 m (W x L x H), source placed in the origin, receiver placed at (1.19, -1.25, 0) m.</p>
+
+<figure class="center-figure">
+   <img src="images/2room-R2-HOM5_metrics.png" alt="Test 3" style="width:60%">
+   <figcaption style="text-align: center">Test 3 - Errors on EDC, EDP, and EDR</figcaption>
+</figure>
+
+<figure class="center-figure">
+   <img src="images/2room-R2-HOM5_ps.png" alt="Test 3" style="width:80%">
+   <figcaption style="text-align: center">Test 3 - Pseudo-spectra.</figcaption>
+</figure>
+
+<div class="row">
+  <div class="column">
+    <img src="images/2room-R2-HOM5_table.png" alt="Test 3" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/2room-R2-HOM5_table_sp.png" alt="Test 3" style="width:100%">
+  </div>
+</div>
+
+
 
 <div>
-   <br>
+   <br><br><br><br><br>
 </div>
   
 
